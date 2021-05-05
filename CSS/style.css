@@ -1,0 +1,95 @@
+.heading_Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading_Item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1, h2 {
+    color: rgba(216, 187, 119, 1);
+    font-family: "Times New Roman";
+    /*text-shadow: 0 5px 0px silver;*/
+    /*box-shadow: 0 5px 0px silver;*/
+    text-shadow: 0 0px 20px rgba(255, 255, 255, 0.7);
+}
+
+body {
+    background-color: rgba(164, 40, 42, 1);
+}
+
+.container_Div {
+    /*
+    border: 1px solid black;
+    max-width: 700px;
+    min-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;*/
+    display: grid;
+    max-width: 700px;
+    min-height: 700px;
+    width: 700px;
+    height: 700px;
+    margin: 2rem auto;
+    border: 2px solid black;
+    
+}
+
+.square{
+    border: 1px solid black;
+    background-color: rgb(128, 128, 128);
+    /*overflow: hidden;l
+    position: relative;
+    flex-basis: 6.25%;*/
+}
+
+.square::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.buttons_Div {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.clear_Button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+
+.clear_Button:focus{
+    outline: none;
+}
+
+.new_Grid_Button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+
+.new_Grid_Button:focus{
+    outline: none;
+}
